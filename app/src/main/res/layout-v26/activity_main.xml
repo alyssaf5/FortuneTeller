@@ -43,31 +43,25 @@
 
     <TextView
         android:id="@+id/msg1"
-        android:layout_width="58dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="192dp"
-        android:layout_marginTop="322dp"
-        android:layout_marginEnd="244dp"
-        android:layout_marginBottom="316dp"
+        android:layout_width="353dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="28dp"
         android:text="@string/not_in_a_million_years"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextInput" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="117dp"
+        android:layout_marginEnd="93dp"
         android:contentDescription="@string/ft"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/msg1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextInput"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
         app:srcCompat="@drawable/fortuneteller"
         tools:visibility="visible" />
 
