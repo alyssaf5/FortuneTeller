@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
     final int[] girlArray = { // The ballArray holds the 5 ball drawables
             R.id.msg1, // ball1 sits at index 0
-            R.id.msg2, // ball2 sits at index 1
-            R.id.msg3, // ball3 sits at index 2
-            R.id.msg4, // ball4 sits at index 3
-            R.id.msg5, // ball5 sits at index 4
+//            R.id.msg2, // ball2 sits at index 1
+//            R.id.msg3, // ball3 sits at index 2
+//            R.id.msg4, // ball4 sits at index 3
+//            R.id.msg5, // ball5 sits at index 4
     };
 
     Button myButton = (Button) findViewById(R.id.button2); // Grab the myButton from the xml by the id
