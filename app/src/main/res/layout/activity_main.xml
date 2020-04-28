@@ -6,22 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="376dp"
-        android:layout_height="575dp"
-        app:srcCompat="@drawable/Fortune_teller_DFM1"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="35dp" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="328dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="694dp"
+        android:text="@string/enter_your_question_here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="368dp"
-        android:layout_height="105dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Ask a question and I shall reveal the truth."
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="44dp" />
-
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="699dp"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
