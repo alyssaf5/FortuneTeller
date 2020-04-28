@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/editTextInput"
         android:layout_width="242dp"
         android:layout_height="36dp"
         android:layout_marginStart="32dp"
@@ -16,6 +16,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="694dp"
+        android:inputType="text"
         android:text="@string/enter_your_question_here"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button2"
@@ -41,20 +42,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="630dp"
-        android:layout_height="885dp"
-        app:srcCompat="@drawable/Fortune_teller_DFM1"
-        tools:layout_editor_absoluteX="-92dp"
-        tools:layout_editor_absoluteY="-29dp" />
 
     <TextView
         android:id="@+id/msg1"
         android:layout_width="58dp"
         android:layout_height="76dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginLeft="192dp"
+        android:layout_marginTop="322dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginRight="244dp"
+        android:layout_marginBottom="316dp"
         android:text="Not in a million years"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="394dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

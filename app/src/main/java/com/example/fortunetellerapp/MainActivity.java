@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final ImageView girlDisplay = (ImageView) findViewById(R.id.imageView); // Grab the ballDisplay from the xml by the id
+        //final ImageView girlDisplay = (ImageView) findViewById(R.id.imageView); // Grab the ballDisplay from the xml by the id
 
         final int[] girlArray = { // The ballArray holds the 5 ball drawables
                  R.id.msg1, // ball1 sits at index 0
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
                 int number = randomNumberGenerator.nextInt(5); // Create a variable that stores a random number between 0 and 4
 
-                girlDisplay.setImageResource(girlArray[number]); // Set the image of the ballDisplay to a random number in the ballArray
+                //girlDisplay.setImageResource(girlArray[number]); // Set the image of the ballDisplay to a random number in the ballArray
             }
         });
     }
