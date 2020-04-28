@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -14,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        final TextView msg1 = findViewById(R.id.msg1);
+        msg1.setVisibility(View.INVISIBLE);
 
         //final ImageView girlDisplay = (ImageView) findViewById(R.id.imageView); // Grab the ballDisplay from the xml by the id
 
@@ -36,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
                 int number = randomNumberGenerator.nextInt(5); // Create a variable that stores a random number between 0 and 4
 
                 //girlDisplay.setImageResource(girlArray[number]); // Set the image of the ballDisplay to a random number in the ballArray
+
+                msg1.setVisibility(View.VISIBLE);
+                msg1.setText("Never in a million years");
             }
         });
     }
