@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final TextView msg1 = findViewById(R.id.msg1);
         msg1.setVisibility(View.INVISIBLE);
+        final ImageView fortuneteller = findViewById(R.id.imageView3);
+        fortuneteller.setVisibility(View.VISIBLE);
 
         //final ImageView girlDisplay = (ImageView) findViewById(R.id.imageView); // Grab the ballDisplay from the xml by the id
 
