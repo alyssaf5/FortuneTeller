@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 //               R.id.msg5, // ball5 sits at index 4
         };
 
+
         Button myButton = (Button) findViewById(R.id.button2); // Grab the myButton from the xml by the id
 
         myButton.setOnClickListener(new View.OnClickListener() {
