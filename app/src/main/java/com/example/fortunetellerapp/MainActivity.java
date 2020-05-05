@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         final TextView msg1 = findViewById(R.id.msg1);
         msg1.setVisibility(View.INVISIBLE);
-//        magic = MediaPlayer.create(MainActivity.this);
+        magic = MediaPlayer.create(MainActivity.this, R.raw.magic);
 /*        final TextView msg2 = findViewById(R.id.msg2);
         msg2.setVisibility(View.INVISIBLE);
 
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 int number = randomNumberGenerator.nextInt(10); // Create a variable that stores a random number between 0 and 4
 
                 //girlDisplay.setImageResource(girlArray[number]); // Set the image of the ballDisplay to a random number in the ballArray
-
+                magic.start();
                 if (number == 0) {
                     msg1.setVisibility(View.VISIBLE);
                     msg1.setText("Never in a million years");
