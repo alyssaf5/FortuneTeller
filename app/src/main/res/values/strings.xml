@@ -6,4 +6,6 @@
     <string name="fortuneteller">fortuneTeller</string>
     <string name="ft">ft</string>
     <string name="_17">17</string>
+    <string name="definitely">Definitely</string>
+    <string name="ask_again_later">Ask again later</string>
 </resources>
