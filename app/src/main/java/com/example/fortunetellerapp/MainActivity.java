@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        final ImageView imageView2 = findViewById((R.id.imageView2));
+        imageView2.setVisibility(View.INVISIBLE);
         final TextView msg1 = findViewById(R.id.msg1);
         msg1.setVisibility(View.INVISIBLE);
         magic = MediaPlayer.create(MainActivity.this, R.raw.magic);
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //girlDisplay.setImageResource(girlArray[number]); // Set the image of the ballDisplay to a random number in the ballArray
                 magic.start();
+                imageView2.setVisibility(View.VISIBLE);
                 if (number == 0) {
                     msg1.setVisibility(View.VISIBLE);
                     msg1.setText("Never in a million years");
@@ -86,6 +89,15 @@ public class MainActivity extends AppCompatActivity {
                     msg1.setVisibility(View.VISIBLE);
                     msg1.setText("Odds are in your favor");
                 }
+                Button myButton = (Button) findViewById(R.id.reset); // Grab the myButton from the xml by the id
+
+                myButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        imageView2.setVisibility(View.INVISIBLE);
+                        msg1.setVisibility(View.INVISIBLE);
+                    }
+                });
             }
         });
     }
